@@ -27,7 +27,10 @@ const Home = ({ searchParams }: SearchParamProps) => {
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2024 CarePluse
             </p>
-            <Link href="/?admin=true" className="text-green-500">
+            <Link
+              href="/?admin=true"
+              className="text-green-500 hover:underline"
+            >
               Admin
             </Link>
           </div>

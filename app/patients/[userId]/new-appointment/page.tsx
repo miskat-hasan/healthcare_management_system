@@ -23,18 +23,21 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             userId={userId}
             type="create"
           />
-
-          <p className="copyright mt-10 py-12">© 2024 CarePluse</p>
         </div>
       </section>
 
-      <Image
-        src="/assets/images/appointment-img.png"
-        height={1500}
-        width={1500}
-        alt="appointment"
-        className="side-img max-w-[390px] bg-bottom"
-      />
+      <div className="relative">
+        <p className="copyright absolute bottom-0 left-10 mt-10 py-4 backdrop-blur-sm">
+          © 2024 CarePluse
+        </p>
+        <Image
+          src="/assets/images/appointment-img.png"
+          height={1500}
+          width={1500}
+          alt="appointment"
+          className="side-img max-w-[390px] bg-bottom"
+        />
+      </div>
     </div>
   );
 };
